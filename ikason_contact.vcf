@@ -1,12 +1,6 @@
 BEGIN:VCARD
 VERSION:3.0
-N:손;낙익;;;
 FN:손낙익 (IKA SON)
-TITLE:스쿠버다이빙강사 · Scuba Diving Trimix Instructor
-ORG:Scuba Instructor
-TEL;TYPE=CELL:010-8835-6262
-EMAIL;TYPE=INTERNET:sonnakick@gmail.com
-NOTE:국제 공인 다이빙 교육단체 인증 / Internationally Certified — PADI #454670, SSI #92994, PSAI #2020, TdiSdi #20472
-URL;TYPE=Instagram:https://www.instagram.com/ik.a_son?igsh=MXRjb2JpczA0dTlreg%3D%3D&utm_source=qr
-URL;TYPE=Facebook:https://www.facebook.com/share/1CvoR4W9Z6/?mibextid=wwXIfr
+TEL:010-8835-6262
+EMAIL:sonnakick@gmail.com
 END:VCARD
