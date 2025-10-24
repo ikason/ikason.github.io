@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>손낙익 · 디지털 명함</title>
+<meta name="description" content="스쿠버다이빙 강사 손낙익(IKA SON) 디지털 명함 · 전화/메일/인스타/페이스북 · vCard 저장 · Kakao ID 복사">
+<style>
+  :root{
+    --primary:#1479ff;
+    --accent:#00c2ff;
+    --bg:#02101f;
+    --card:rgba(255,255,255,.98);
+    --text:#0f1b2d;
+    --muted:#52708d;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; color:#fff; font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR','Apple SD Gothic Neo',system-ui,sans-serif;
+    background:
+      radial-gradient(1200px 600px at 50% -10%, rgba(0,194,255,.35), transparent 60%),
+      linear-gradient(180deg, #02101f 0%, #05213c 60%, #02101f 100%);
+    min-height:100svh;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:28px 16px 80px}
+  .card{
+    background:var(--card); color:var(--text);
+    border-radius:20px; padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25); backdrop-filter:blur(4px);
+  }
+  .header{display:flex;gap:16px;align-items:center;margin-bottom:8px}
+  .avatar{
+    width:74px;height:74px;border-radius:16px;overflow:hidden;flex:0 0 auto;
+    box-shadow:0 6px 16px rgba(0,0,0,.18);
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  h1{font-size:22px;margin:0 0 2px 0}
+  .subtitle{color:#335069;font-size:14px}
+  .chips{margin-top:6px}
+  .chip{display:inline-block;background:#eef4ff;color:#1754ff;border:1px solid #d7e4ff;padding:8px 10px;border-radius:12px;font-size:12px;margin:4px 6px 0 0;line-height:1.8}
+  .info{margin:10px 0 6px 0}
+  .badge{display:inline-block;background:#f4f7fb;border:1px solid #e6ebf3;color:#2a3c52;padding:6px 10px;border-radius:10px;font-size:13px;margin:4px 6px 0 0}
+  .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+  a.btn,button.btn{
+    appearance:none;border:0;cursor:pointer;
+    text-decoration:none;text-align:center;border-radius:12px;padding:14px 12px;font-weight:800;
+    background:#0f2140;color:#fff;border:1px solid rgba(255,255,255,.1)
+  }
+  .btn.primary{background:linear-gradient(135deg,var(--primary),var(--accent));border:none;color:#001528}
+  .section{margin-top:16px;padding-top:12px;border-top:1px dashed #e1e7f0}
+  .small{font-size:12px;color:#6c879f;line-height:1.6}
+  .rules{margin-top:14px;color:#9ab4c8;font-size:12px;line-height:1.6}
+  .footer{text-align:center;color:#9ab4c8;font-size:12px;margin-top:16px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="header">
+        <div class="avatar"><img src="KakaoTalk_20250428_19464389822.JPG" alt="손낙익 프로필"></div>
+        <div>
+          <h1>손낙익 <span style="font-size:18px;color:#52708d;">(IKA SON)</span></h1>
+          <div class="subtitle">스쿠버다이빙 강사 · Scuba Diving Instructor</div>
+          <div class="chips">
+            <span class="chip">
+              국제 공인 다이빙 교육단체 인증 · Internationally Certified<br>
+              🌟 Scuba Diving Trimix Instructor<br>
+              🔹 PADI #454670 🔹 SSI #92994 🔹 PSAI #2020 🔹 TDI·SDI #20472
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="badge">📞 010-8835-6262</div>
+        <div class="badge">✉️ sonnakick@gmail.com</div>
+        <div class="badge">💬 KakaoTalk: <strong id="kakaoId">sonnakick</strong></div>
+      </div>
+
+      <div class="btns">
+        <a class="btn primary" href="tel:010-8835-6262">전화하기</a>
+        <a class="btn" href="mailto:sonnakick@gmail.com">메일 보내기</a>
+        <a class="btn" href="https://www.instagram.com/ik.a_son?igsh=MXRjb2JpczA0dTlreg%3D%3D&utm_source=qr" target="_blank" rel="noopener">인스타그램</a>
+        <a class="btn" href="https://www.facebook.com/share/1CvoR4W9Z6/?mibextid=wwXIfr" target="_blank" rel="noopener">페이스북</a>
+        <button class="btn" id="copyKakao">카카오ID 복사</button>
+        <a class="btn" href="ikason_contact.vcf" download>연락처 저장 (vCard)</a>
+      </div>
+
+      <div class="section">
+        <div class="small">
+          위의 버튼을 터치하면 바로 연결됩니다.<br>
+          전화 · 메일 · 인스타그램 · 페이스북 · 연락처 저장 기능을 지원합니다.
+        </div>
+        <div class="rules">
+          <div>첫번째 규칙 “항상 즐겨라”</div>
+          <div>두번째 규칙 “첫번째 규칙에 충실해라”</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">© 손낙익 · 디지털 명함</div>
+  </div>
+
+<script>
+  document.getElementById('copyKakao').addEventListener('click', async () => {
+    const id = document.getElementById('kakaoId').textContent.trim();
+    try {
+      await navigator.clipboard.writeText(id);
+      alert('카카오 ID가 복사되었습니다: ' + id);
+    } catch(e){
+      alert('복사가 안 되면 길게 눌러 선택 후 복사하세요: ' + id);
+    }
+  });
+</script>
+</body>
+</html>
